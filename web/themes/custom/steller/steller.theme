@@ -1,0 +1,119 @@
+<?php
+use Drupal\Core\Menu\MenuTreeParameters;
+
+use Drupal\Core\Menu\MenuLinkTreeInterface;
+use Drupal\Core\Url;
+use Drupal\file\FileInterface;
+use Drupal\Core\DrupalKernel;
+
+
+use Drupal\Core\Menu\MenuTreeInterface;
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function steller_page_attachments_alter(array &$attachments) {
+  // Define the updated viewport meta tag.
+  $updated_viewport_meta = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no',
+    ],
+  ];
+
+  // Search for and replace the existing viewport meta tag.
+  if (!empty($attachments['#attached']['html_head'])) {
+    foreach ($attachments['#attached']['html_head'] as $key => &$element) {
+      if (is_array($element) && isset($element[0]['#tag']) && $element[0]['#tag'] === 'meta' && $element[0]['#attributes']['name'] === 'viewport') {
+        // Replace the existing viewport meta tag.
+        $attachments['#attached']['html_head'][$key][0] = $updated_viewport_meta;
+        return;
+      }
+    }
+  }
+
+  // If no viewport meta tag exists, add it.
+  $attachments['#attached']['html_head'][] = [$updated_viewport_meta, 'viewport_meta'];
+}
+/**
+ * Implémentation de hook_theme_suggestions_HOOK().
+ */
+function steller_preprocess_html(array &$variables) {
+  // data-spy="scroll" data-target=".navbar" data-offset="40" id="home"
+  $variables['attributes']['data-spy'] = 'scroll';
+  $variables['attributes']['data-target'] = '.navbar';
+  $variables['attributes']['data-offset'] = '40';
+  $variables['attributes']['id'] = 'home';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function steller_preprocess_page(array &$variables) {
+  // Get the active theme's path.
+  $theme_path = \Drupal::theme()->getActiveTheme()->getPath();
+
+  // Define the default logo path.
+  $default_logo = $theme_path . '/logo.svg'; // Adjust the filename if needed.
+
+  // Check for a custom logo defined in theme settings.
+  $logo_path = theme_get_setting('logo.url') ?: $default_logo;
+
+  // Use the file_url_generator service to generate the logo URL.
+  $file_url_generator = \Drupal::service('file_url_generator');
+  $logo_url = $file_url_generator->generateAbsoluteString($logo_path);
+
+  // Add the logo URL to the template variables.
+  $variables['logo'] = $logo_url;
+
+
+
+
+
+
+  // Load the main menu tree.
+  $menu_name = 'main';
+  $menu_tree = \Drupal::menuTree();
+
+  // Build the parameters to load the menu tree.
+  $parameters = $menu_tree->getCurrentRouteMenuTreeParameters($menu_name);
+
+  // Load the tree based on the parameters.
+  $tree = $menu_tree->load($menu_name, $parameters);
+
+  // Transform the tree using the menu link manager.
+  $manipulators = [
+    ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+    ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+  ];
+  $tree = $menu_tree->transform($tree, $manipulators);
+
+  // Build the render array.
+  $menu = $menu_tree->build($tree);
+
+  // Pass the menu items to the Twig template.
+  $variables['main_menu_items'] = $menu['#items'];
+
+
+
+  // Access the settings from the configuration.
+  $config = \Drupal::config('steller.settings');
+
+  // Pass the settings to the template.
+  $variables['full_name'] = $config->get('full_name');
+  $variables['what_you_do'] = $config->get('what_you_do');
+
+  // Get the file URI from the theme settings.
+  $file_uri = $config->get('cv_pdf');
+
+
+
+  // Get the URL using the stream wrapper manager.
+  $file_url = \Drupal::service('file_url_generator')->generateAbsoluteString(\Drupal\file\Entity\File::load($file_uri[0])->getFileUri());
+
+
+  $variables['cv_url'] = $file_url;
+
+}
+
+

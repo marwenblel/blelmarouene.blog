@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf8eae21-a8f7-432a-b988-13e2b87672f6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/sites/default/files/cv_uploads/BLEL MAROUENE - Développeur php Drupal.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/icons/folder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.gitlab-ci.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/AbstractClassMetadataFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/AbstractManagerRegistry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/AbstractProxyFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/Autoloader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/src/Plugin/Devel/Dumper/AvailableTestDumper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Plugin/DevelGenerate/BlockContentDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/CODEOWNERS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/ClassLoader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/ClassMetadata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/ClassMetadataFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Util/ClassUtils.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Element/ClientSideFilterTable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ColocatedMappingDriver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/CommonException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Comparable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/ConfigDeleteForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/ConfigEditor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/ConfigsList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/ConnectionRegistry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/ContainerInfoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Plugin/DevelGenerate/ContentDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Util/Debug.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Twig/Extension/Debug.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/DefaultFileLocator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Plugin/Menu/DestinationMenuLink.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelBrowserTestBase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Unit/DevelClientSideFilterTableTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Drush/Commands/DevelCommands.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelCommandsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelContainerInfoTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/DevelController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Annotation/DevelDumper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/DevelDumperBase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/DevelDumperInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/DevelDumperManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/DevelDumperManagerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/DevelDumperPluginManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/DevelDumperPluginManagerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelDumperTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Kernel/DevelDumperTestTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelElementInfoTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Kernel/DevelEnforcedDependenciesTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_entity_test/src/Entity/DevelEntityTestCanonical.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_entity_test/src/Entity/DevelEntityTestEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_entity_test/src/Plugin/Derivative/DevelEntityTestLocalTasks.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_entity_test/src/Entity/DevelEntityTestNoLinks.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Kernel/DevelEntityToArrayTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelEntityTypeInfoTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelErrorHandlerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelEventInfoTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Annotation/DevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/DevelGenerateBase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/DevelGenerateBaseInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/src/Functional/DevelGenerateBrowserTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/src/Functional/DevelGenerateBrowserTestBase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Drush/Commands/DevelGenerateCommands.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/src/Functional/DevelGenerateCommandsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/DevelGenerateException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Form/DevelGenerateForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/src/Unit/DevelGenerateManagerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/DevelGeneratePermissions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/DevelGeneratePluginManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Routing/DevelGenerateRoutes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/src/Traits/DevelGenerateSetupTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelLayoutInfoTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/DevelLazyBuilders.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Plugin/Derivative/DevelLocalTask.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Plugin/Mail/DevelMailLog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Kernel/DevelMailLogTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelMenuLinksTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelModulesReinstallTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelPathAliasTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Kernel/DevelQueryDebugTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/DevelReinstall.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelRequirementsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelRouteInfoTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelRouterRebuildTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelStateEditorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelSwitchUserTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_test/src/Controller/DevelTestController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelToolbarTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Kernel/DevelTwigExtensionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/src/Functional/DevelWebAssertHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/src/Controller/DumperTestController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/ElementInfoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/EntityDebugController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/EntityTypeInfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/EntityTypeInfoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Reflection/EnumReflectionProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/EventSubscriber/ErrorHandlerSubscriber.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/src/EventArgs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/EventInfoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/src/EventManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/src/EventSubscriber.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/modules/devel_generate_example/src/Plugin/DevelGenerate/ExampleDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileDriver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileLocator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Render/FilteredMarkup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Attributes/Generator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/Exception/InvalidArgumentException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Plugin/Devel/Dumper/Kint.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/LayoutInfoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Event/LifecycleEventArgs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Event/LoadClassMetadataEventArgs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Event/ManagerEventArgs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/ManagerRegistry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/MappingDriver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/MappingDriverChain.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/MappingException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Plugin/DevelGenerate/MediaDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Plugin/DevelGenerate/MenuDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/src/Plugin/Devel/Dumper/NotAvailableTestDumper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/NotifyPropertyChanged.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/ObjectManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/ObjectManagerDecorator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/ObjectRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Event/OnClearEventArgs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/Exception/OutOfBoundsException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/PHPDriver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Event/PreUpdateEventArgs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/PropertyChangedListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/Proxy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Proxy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/ProxyClassNameResolver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/ProxyDefinition.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/Exception/ProxyException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/ProxyGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/ReflectionService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Plugin/Menu/RouteDetailMenuLink.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/RouteInfoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Routing/RouteSubscriber.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/RouterRebuildConfirmForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Reflection/RuntimeReflectionProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/RuntimeReflectionService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/SettingsForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/StaticPHPDriver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Plugin/Block/SwitchUserBlock.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Controller/SwitchUserController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/SwitchUserForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/SwitchUserListHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/SwitchUserPageForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/SymfonyFileLocator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/SystemStateEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Plugin/DevelGenerate/TermDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_test/src/Routing/TestRouteSubscriber.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/EventSubscriber/ThemeInfoRebuildSubscriber.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/ToolbarHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Form/ToolbarSettingsForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Reflection/TypedNoDefaultReflectionProperty.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/UPGRADE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/UPGRADE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/UPGRADE_TO_2_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/UPGRADE_TO_2_2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/src/Proxy/Exception/UnexpectedValueException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Plugin/DevelGenerate/UserDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/src/Plugin/Devel/Dumper/VarDumper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/src/Plugin/DevelGenerate/VocabularyDevelGenerate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/docs/en/reference/class-loading.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/icons/bebebe/cog.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/icons/ffffff/cog.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/persistence/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/config.contrib.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/config.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.api.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/css/devel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.info.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.install" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.libraries.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.links.menu.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.links.task.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.permissions.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/config/schema/devel.schema.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel.services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/config/install/devel.settings.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/css/devel.toolbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/config/install/devel.toolbar.settings.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/css/devel_dumper_test.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/devel_dumper_test.info.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/js/devel_dumper_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/devel_dumper_test.libraries.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_dumper_test/devel_dumper_test.routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_entity_test/devel_entity_test.info.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_entity_test/devel_entity_test.links.task.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_entity_test/devel_entity_test.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/devel_generate.batch.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/devel_generate.info.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/devel_generate.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/devel_generate.permissions.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/devel_generate.routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/devel_generate.services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/modules/devel_generate_example/devel_generate_example.info.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/modules/devel_generate_fields/devel_generate_fields.info.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/devel_generate/tests/modules/devel_generate_fields/devel_generate_fields.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_test/devel_test.info.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_test/devel_test.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_test/devel_test.routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/tests/modules/devel_test/devel_test.services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/drupalci.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/eslint" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/expand-composer-json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/common/docs/en/index.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/addon-metadata/ddev-drupal-contrib/manifest.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/nightwatch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/phpcbf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/phpcs.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/phpcs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/phpstan.neon" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/phpstan" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/phpunit" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/poser" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/doctrine/event-manager/psalm-baseline.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/stylelint" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/.ddev/commands/web/symlink-project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modules/contrib/devel/config/install/system.menu.devel.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/custom/steller/theme-settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sql" afterPath="$PROJECT_DIR$/db.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.php" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/custom/steller/templates/layout/page.html.twig" afterPath="$PROJECT_DIR$/web/themes/custom/steller/templates/layout/page.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/custom/steller/steller.theme" afterPath="$PROJECT_DIR$/web/themes/custom/steller/steller.theme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="blelmarouene.blog.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DrupalConfiguration" enabled="true" version="8">
+    <drupalPath>C:\xampp1\htdocs\blelmarouene.blog\web</drupalPath>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="blelmarouene.blog" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="page.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/templates/layout/page.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.384615" vertical-offset="759" max-vertical-offset="1666">
+              <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+              <folding>
+                <element signature="n#nav#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="steller.theme" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/steller.theme">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9465409" vertical-offset="1387" max-vertical-offset="2125">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#46#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="theme-settings.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/theme-settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7692308" vertical-offset="99" max-vertical-offset="748">
+              <caret line="7" column="109" selection-start-line="7" selection-start-column="109" selection-end-line="7" selection-end-column="109" />
+              <folding>
+                <element signature="e#6#36#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/themes/custom/steller/templates/layout/html.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/steller/steller.libraries.yml" />
+        <option value="$PROJECT_DIR$/web/themes/custom/steller/templates/layout/page.html.twig" />
+        <option value="$PROJECT_DIR$/web/themes/custom/steller/theme-settings.php" />
+        <option value="$PROJECT_DIR$/web/themes/custom/steller/steller.theme" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1552" />
+    <option name="height" value="850" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blelmarouene.blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf8eae21-a8f7-432a-b988-13e2b87672f6" name="Default" comment="" />
+      <created>1736859683533</created>
+      <option name="number" value="Default" />
+      <updated>1736859683533</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1552" height="850" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2537012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24966353" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/templates/layout/page.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1326">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding>
+            <element signature="n#nav#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/steller.theme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1853">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/MenuTreeStorageInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1263" max-vertical-offset="4794">
+          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/menu.api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7667">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/templates/layout/html.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44992295" vertical-offset="218" max-vertical-offset="935">
+          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/olivero/templates/layout/html.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.70261943" vertical-offset="456" max-vertical-offset="1105">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/claro/logo.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="662">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/olivero/logo.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="662">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/claro/templates/classy/layout/html.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/olivero/templates/layout/page.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6461794" vertical-offset="1039" max-vertical-offset="2397">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/claro/templates/page.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="50" max-vertical-offset="1224">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/steller.libraries.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25185186" vertical-offset="0" max-vertical-offset="675">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/steller.info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/starterkit_theme/starterkit_theme.theme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/stable9/stable9.theme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/claro/claro.theme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33222592" vertical-offset="5393" max-vertical-offset="31314">
+          <caret line="346" column="37" selection-start-line="346" selection-start-column="33" selection-end-line="346" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/MenuTreeParameters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="4505">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/claro/templates/menu-link-form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/olivero/olivero.breakpoints.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/olivero/templates/navigation/menu--primary-menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4544025" vertical-offset="0" max-vertical-offset="2465">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/olivero/templates/includes/preload.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/themes/olivero/olivero.theme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33222592" vertical-offset="1024" max-vertical-offset="12121">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12801">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/MenuLinkTree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.68239" vertical-offset="1706" max-vertical-offset="5270">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/MenuTreeStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9465409" vertical-offset="2968" max-vertical-offset="24905">
+          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/MenuTreeStorageInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1263" max-vertical-offset="4794">
+          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/menu.api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7667">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/core/lib/Drupal/Core/Menu/MenuLinkTreeInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4166667" vertical-offset="866" max-vertical-offset="2295">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/templates/layout/page.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.384615" vertical-offset="759" max-vertical-offset="1666">
+          <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+          <folding>
+            <element signature="n#nav#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/theme-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7692308" vertical-offset="99" max-vertical-offset="748">
+          <caret line="7" column="109" selection-start-line="7" selection-start-column="109" selection-end-line="7" selection-end-column="109" />
+          <folding>
+            <element signature="e#6#36#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/custom/steller/steller.theme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9465409" vertical-offset="1387" max-vertical-offset="2125">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

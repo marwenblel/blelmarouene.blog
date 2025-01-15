@@ -1,0 +1,11 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      assets/vendors/themify-icons/css/themify-icons.css: {}
+      assets/css/steller.css: {}
+  js:
+    assets/vendors/jquery/jquery-3.4.1.js: {}
+    assets/vendors/bootstrap/bootstrap.bundle.js: {}
+    assets/vendors/bootstrap/bootstrap.affix.js: {}
+    assets/js/steller.js: {}
