@@ -6,6 +6,7 @@ use Drupal\Core\Url;
 use Drupal\file\FileInterface;
 use Drupal\Core\DrupalKernel;
 use Drupal\node\Entity\Node;
+use Drupal\node\Entity\NodeType;
 
 
 use Drupal\Core\Menu\MenuTreeInterface;
@@ -135,7 +136,7 @@ function steller_preprocess_page(array &$variables) {
     $variables['facebook']             = $config->get('facebook');
     $variables['google']               = $config->get('google');
     $variables['linkedin']             = $config->get('linkedin');
-    $variables['twitter']               = $config->get('twitter');
+    $variables['twitter']              = $config->get('twitter');
 
 
 
@@ -176,6 +177,12 @@ function steller_preprocess_page(array &$variables) {
 
   // Pass the article data to the page template
   $variables['last_three_articles'] = $articles_data;
+
+
+
+  $variables['location']             = $config->get('location');
+  $variables['phone_number']         = $config->get('phone_number');
+  $variables['email']                = $config->get('email');
 
 
 }

@@ -13,3 +13,7 @@ regions:
   sidebar_first: 'Sidebar First'
   sidebar_second: 'Sidebar Second'
   footer: 'Footer'
+
+  # Installation and Uninstallation hooks
+install: steller.install
+uninstall: steller.uninstall

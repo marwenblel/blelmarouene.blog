@@ -114,8 +114,8 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     ];
 
 
-       // Add a fieldset for social links
-       $form['social_links_fieldset'] = [
+    // Add a fieldset for social links
+    $form['social_links_fieldset'] = [
         '#type'        => 'details',
         '#title'       => t('Social Links'),
         '#collapsible' => TRUE,
@@ -126,7 +126,7 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     $form['social_links_fieldset']['facebook'] = [
         '#type'          => 'textfield',
         '#title'         => t('Facebook'),
-        '#default_value' => \Drupal::config('mymodule.settings')->get('facebook'),
+        '#default_value' => \Drupal::config('steller.settings')->get('facebook'),
         '#description'   => t('Enter your Facebook profile or page URL.'),
     ];
 
@@ -134,7 +134,7 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     $form['social_links_fieldset']['google'] = [
         '#type'          => 'textfield',
         '#title'         => t('Google'),
-        '#default_value' => \Drupal::config('mymodule.settings')->get('google'),
+        '#default_value' => \Drupal::config('steller.settings')->get('google'),
         '#description'   => t('Enter your Google+ (or Google profile) URL.'),
     ];
 
@@ -142,7 +142,7 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     $form['social_links_fieldset']['linkedin'] = [
         '#type'          => 'textfield',
         '#title'         => t('LinkedIn'),
-        '#default_value' => \Drupal::config('mymodule.settings')->get('linkedin'), 
+        '#default_value' => \Drupal::config('steller.settings')->get('linkedin'), 
         '#description'   => t('Enter your LinkedIn profile URL.'),
     ];
 
@@ -150,8 +150,45 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     $form['social_links_fieldset']['twitter'] = [
         '#type'          => 'textfield',
         '#title'         => t('Twitter'),
-        '#default_value' => \Drupal::config('mymodule.settings')->get('twitter'),
+        '#default_value' => \Drupal::config('steller.settings')->get('twitter'),
         '#description'   => t('Enter your Twitter profile URL.'),
+    ];
+
+
+
+
+    
+    // Add a fieldset for social links
+    $form['get_in_touch_fieldset'] = [
+        '#type'        => 'details',
+        '#title'       => t('Get in touch'),
+        '#collapsible' => TRUE,
+        '#collapsed'   => FALSE,
+    ];
+
+    // Add Facebook URL field
+    $form['get_in_touch_fieldset']['location'] = [
+        '#type'          => 'textfield',
+        '#title'         => t('Location'),
+        '#default_value' => \Drupal::config('steller.settings')->get('location'),
+        '#description'   => t('Enter your location.'),
+    ];
+
+    // Add Google URL field
+    $form['get_in_touch_fieldset']['phone_number'] = [
+        '#type'          => 'tel',
+        '#title'         => t('Phone number'),
+        '#default_value' => \Drupal::config('steller.settings')->get('phone_number'),
+        '#description'   => t('Enter your Phone number.'),
+        '#pattern'       => '^(\+?\d{1,4}[\s\-]?)?(\(?\d{1,3}\)?[\s\-]?)?[\d\s\-]{7,15}$',
+    ];
+
+    // Add LinkedIn URL field
+    $form['get_in_touch_fieldset']['email'] = [
+        '#type'          => 'email',
+        '#title'         => t('Email'),
+        '#default_value' => \Drupal::config('steller.settings')->get('email'), 
+        '#description'   => t('Enter your email address.'),
     ];
 
 
