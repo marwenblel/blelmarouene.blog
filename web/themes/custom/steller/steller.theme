@@ -5,6 +5,7 @@ use Drupal\Core\Menu\MenuLinkTreeInterface;
 use Drupal\Core\Url;
 use Drupal\file\FileInterface;
 use Drupal\Core\DrupalKernel;
+use Drupal\node\Entity\Node;
 
 
 use Drupal\Core\Menu\MenuTreeInterface;
@@ -130,6 +131,52 @@ function steller_preprocess_page(array &$variables) {
     $variables['projects_completed'] = $config->get('projects_completed');
     $variables['awards_won']         = $config->get('awards_won');
     $variables['resume']             = $config->get('resume');
+
+    $variables['facebook']             = $config->get('facebook');
+    $variables['google']               = $config->get('google');
+    $variables['linkedin']             = $config->get('linkedin');
+    $variables['twitter']               = $config->get('twitter');
+
+
+
+
+
+  // Fetch the last 3 article nodes
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')
+    ->loadByProperties(['type' => 'article', 'status' => 1]);
+
+  // Load nodes using loadMultiple() method after sorting them by creation date
+  $node_ids = array_keys($nodes);
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($node_ids);
+
+  // Sort nodes by creation date (descending order)
+  usort($nodes, function ($a, $b) {
+    return strtotime($b->getCreatedTime()) - strtotime($a->getCreatedTime());
+  });
+
+  // Limit to the last 3 articles
+  $last_three_articles = array_slice($nodes, 0, 3);
+
+  // Extract the title and body for each article
+  $articles_data = [];
+  foreach ($last_three_articles as $node) {
+    $author = $node->getOwner();
+    $author_name = $author->getDisplayName();
+
+    $url = $node->toUrl()->toString();
+
+
+    $articles_data[] = [
+      'title'       => $node->getTitle(),
+      'body'        => $node->get('body')->value,
+      'author_name' => $author_name,
+      'url'         => $url,
+    ];
+  }
+
+  // Pass the article data to the page template
+  $variables['last_three_articles'] = $articles_data;
+
 
 }
 
