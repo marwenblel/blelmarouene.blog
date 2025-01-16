@@ -119,6 +119,12 @@ function steller_preprocess_page(array &$variables) {
     $header_img_url = \Drupal::service('file_url_generator')->generateAbsoluteString(\Drupal\file\Entity\File::load($header_img_uri[0])->getFileUri());
     $variables['header_img'] = $header_img_url;
 
+    // Get the file URI from the theme settings.
+    $cv_img_uri = $config->get('cv_img');
+    // Get the URL using the stream wrapper manager.
+    $cv_img_url = \Drupal::service('file_url_generator')->generateAbsoluteString(\Drupal\file\Entity\File::load($cv_img_uri[0])->getFileUri());
+    $variables['cv_img'] = $cv_img_url;
+
     // Pass the settings to the template.
     $variables['happy_clients']      = $config->get('happy_clients');
     $variables['projects_completed'] = $config->get('projects_completed');
