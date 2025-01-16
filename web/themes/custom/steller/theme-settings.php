@@ -7,90 +7,41 @@ use Drupal\Core\DrupalKernel;
  * Implements hook_form_system_theme_settings_alter() for Steller theme settings.
  */
 function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
-    // Add a fieldset for blogger-related fields
-    $form['blogger_fieldset'] = [
+    $form['home_fieldset'] = [
         '#type'        => 'details',
-        '#title'       => t('Blogger Information'),
+        '#title'       => t('Home'),
         '#collapsible' => TRUE,
         '#collapsed'   => FALSE,
     ];
-
-    // Add a text field for 'full name' inside the fieldset.
-    $form['blogger_fieldset']['full_name'] = [
+    $form['home_fieldset']['full_name'] = [
         '#type'          => 'textfield',
         '#title'         => t('Full name'),
         '#default_value' => \Drupal::config('steller.settings')->get('full_name'),
         '#description'   => t('Enter the first full name to display in the theme.'),
     ];
-
-    // Add a text field for 'what you do' inside the fieldset.
-    $form['blogger_fieldset']['what_you_do'] = [
+    $form['home_fieldset']['what_you_do'] = [
         '#type'          => 'textfield',
         '#title'         => t('What you do'),
         '#default_value' => \Drupal::config('steller.settings')->get('what_you_do'),
         '#description'   => t('Enter the job to display in the theme.'),
     ];
-
-    // Add a textarea field for 'Resume' inside the fieldset.
-    $form['blogger_fieldset']['resume'] = [
-        '#type'          => 'textarea',
-        '#title'         => t('Resume'),
-        '#default_value' => \Drupal::config('steller.settings')->get('resume'),
-        '#description'   => t('Enter a detailed resume. This field supports plain text.'),
-        '#rows'          => 5, // Number of visible rows.
-        '#required'      => FALSE, // Set to TRUE if you want this field to be mandatory.
-    ];
-
-    // Add a managed file field for the 'CV PDF' upload inside the fieldset.
-    $form['blogger_fieldset']['cv_pdf'] = [
+    $form['home_fieldset']['cv_pdf'] = [
         '#type'              => 'managed_file',
         '#title'             => t('CV PDF'),
         '#description'       => t('Upload your CV in PDF format.'),
-        '#default_value'     => \Drupal::config('steller.settings')->get('cv_pdf'), // If a file has been uploaded, it will be the default value.
-        '#upload_location'   => 'public://steller/cv_uploads/', // Path where the file will be stored.
+        '#default_value'     => \Drupal::config('steller.settings')->get('cv_pdf'),
+        '#upload_location'   => 'public://steller/cv_uploads/',
         '#file_extensions'   => 'pdf',
-        '#required'          => FALSE, // Set to TRUE if you want the file to be mandatory.
+        '#required'          => FALSE,
         '#upload_validators' => [
             'file_validate_extensions' => ['pdf'],
         ],
     ];
-
-    // Add a fieldset for related fields
-    $form['statistics_fieldset'] = [
-        '#type'        => 'details',
-        '#title'       => t('Statistics'),
-    ];
-
-    // Add a text field for 'happy clients' inside the fieldset.
-    $form['statistics_fieldset']['happy_clients'] = [
-        '#type'          => 'number',
-        '#title'         => t('Happy clients'),
-        '#default_value' => \Drupal::config('steller.settings')->get('happy_clients'),
-        '#description'   => t('Enter the number of happy clients.'),
-    ];
-
-    // Add a text field for 'projects completed' inside the fieldset.
-    $form['statistics_fieldset']['projects_completed'] = [
-        '#type'          => 'number',
-        '#title'         => t('Projects completed'),
-        '#default_value' => \Drupal::config('steller.settings')->get('projects_completed'),
-        '#description'   => t('Enter the projects completed in the theme.'),
-    ];
-
-    // Add a text field for 'awards won' inside the fieldset.
-    $form['statistics_fieldset']['awards_won'] = [
-        '#type'          => 'number',
-        '#title'         => t('Awards won'),
-        '#default_value' => \Drupal::config('steller.settings')->get('awards_won'),
-        '#description'   => t('Enter the awards won in the theme.'),
-    ];
-
-    // Add a managed file field for the CV PDF upload.
-    $form['header_img'] = [
+    $form['home_fieldset']['header_img'] = [
         '#type'              => 'managed_file',
         '#title'             => t('Header image'),
         '#description'       => t('Upload your header image.'),
-        '#default_value'     => \Drupal::config('steller.settings')->get('header_img'), // If a file has been uploaded, it will be the default value.
+        '#default_value'     => \Drupal::config('steller.settings')->get('header_img'),
         '#upload_location'   => 'public://steller/images/',
         '#file_extensions'   => 'svg',
         '#required'          => FALSE,
@@ -98,13 +49,48 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
             'file_validate_extensions' => ['svg'],
         ],
     ];
+    $form['home_fieldset']['happy_clients'] = [
+        '#type'          => 'number',
+        '#title'         => t('Happy clients'),
+        '#default_value' => \Drupal::config('steller.settings')->get('happy_clients'),
+        '#description'   => t('Enter the number of happy clients.'),
+    ];
+    $form['home_fieldset']['projects_completed'] = [
+        '#type'          => 'number',
+        '#title'         => t('Projects completed'),
+        '#default_value' => \Drupal::config('steller.settings')->get('projects_completed'),
+        '#description'   => t('Enter the projects completed in the theme.'),
+    ];
+    $form['home_fieldset']['awards_won'] = [
+        '#type'          => 'number',
+        '#title'         => t('Awards won'),
+        '#default_value' => \Drupal::config('steller.settings')->get('awards_won'),
+        '#description'   => t('Enter the awards won in the theme.'),
+    ];
 
-    // Add a managed file field for the CV PDF upload.
-    $form['cv_img'] = [
+
+
+
+
+    $form['about_fieldset'] = [
+        '#type'        => 'details',
+        '#title'       => t('About'),
+        '#collapsible' => TRUE,
+        '#collapsed'   => FALSE,
+    ];
+    $form['about_fieldset']['resume'] = [
+        '#type'          => 'textarea',
+        '#title'         => t('Resume'),
+        '#default_value' => \Drupal::config('steller.settings')->get('resume'),
+        '#description'   => t('Enter a detailed resume. This field supports plain text.'),
+        '#rows'          => 5,
+        '#required'      => FALSE,
+    ];
+    $form['about_fieldset']['cv_img'] = [
         '#type'              => 'managed_file',
         '#title'             => t('CV image'),
         '#description'       => t('Upload your CV image.'),
-        '#default_value'     => \Drupal::config('steller.settings')->get('cv_img'), // If a file has been uploaded, it will be the default value.
+        '#default_value'     => \Drupal::config('steller.settings')->get('cv_img'),
         '#upload_location'   => 'public://steller/images/',
         '#file_extensions'   => 'png',
         '#required'          => FALSE,
@@ -114,85 +100,54 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     ];
 
 
-    // Add a fieldset for social links
-    $form['social_links_fieldset'] = [
+
+    $form['contact_fieldset'] = [
         '#type'        => 'details',
-        '#title'       => t('Social Links'),
+        '#title'       => t('Contact'),
         '#collapsible' => TRUE,
         '#collapsed'   => FALSE,
     ];
-
-    // Add Facebook URL field
-    $form['social_links_fieldset']['facebook'] = [
+    $form['contact_fieldset']['facebook'] = [
         '#type'          => 'textfield',
         '#title'         => t('Facebook'),
         '#default_value' => \Drupal::config('steller.settings')->get('facebook'),
         '#description'   => t('Enter your Facebook profile or page URL.'),
     ];
-
-    // Add Google URL field
-    $form['social_links_fieldset']['google'] = [
+    $form['contact_fieldset']['google'] = [
         '#type'          => 'textfield',
         '#title'         => t('Google'),
         '#default_value' => \Drupal::config('steller.settings')->get('google'),
         '#description'   => t('Enter your Google+ (or Google profile) URL.'),
     ];
-
-    // Add LinkedIn URL field
-    $form['social_links_fieldset']['linkedin'] = [
+    $form['contact_fieldset']['linkedin'] = [
         '#type'          => 'textfield',
         '#title'         => t('LinkedIn'),
         '#default_value' => \Drupal::config('steller.settings')->get('linkedin'), 
         '#description'   => t('Enter your LinkedIn profile URL.'),
     ];
-
-    // Add Twitter URL field
-    $form['social_links_fieldset']['twitter'] = [
+    $form['contact_fieldset']['twitter'] = [
         '#type'          => 'textfield',
         '#title'         => t('Twitter'),
         '#default_value' => \Drupal::config('steller.settings')->get('twitter'),
         '#description'   => t('Enter your Twitter profile URL.'),
     ];
-
-
-
-
-    
-    // Add a fieldset for social links
-    $form['get_in_touch_fieldset'] = [
-        '#type'        => 'details',
-        '#title'       => t('Get in touch'),
-        '#collapsible' => TRUE,
-        '#collapsed'   => FALSE,
-    ];
-
-    // Add Facebook URL field
-    $form['get_in_touch_fieldset']['location'] = [
+    $form['contact_fieldset']['location'] = [
         '#type'          => 'textfield',
         '#title'         => t('Location'),
         '#default_value' => \Drupal::config('steller.settings')->get('location'),
         '#description'   => t('Enter your location.'),
     ];
-
-    // Add Google URL field
-    $form['get_in_touch_fieldset']['phone_number'] = [
+    $form['contact_fieldset']['phone_number'] = [
         '#type'          => 'tel',
         '#title'         => t('Phone number'),
         '#default_value' => \Drupal::config('steller.settings')->get('phone_number'),
         '#description'   => t('Enter your Phone number.'),
         '#pattern'       => '^(\+?\d{1,4}[\s\-]?)?(\(?\d{1,3}\)?[\s\-]?)?[\d\s\-]{7,15}$',
     ];
-
-    // Add LinkedIn URL field
-    $form['get_in_touch_fieldset']['email'] = [
+    $form['contact_fieldset']['email'] = [
         '#type'          => 'email',
         '#title'         => t('Email'),
         '#default_value' => \Drupal::config('steller.settings')->get('email'), 
         '#description'   => t('Enter your email address.'),
     ];
-
-
-
-
-
 }

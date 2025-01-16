@@ -55,21 +55,17 @@ function steller_preprocess_page(array &$variables) {
   // Access the settings from the configuration.
   $config = \Drupal::config('steller.settings');
 
-  // Get the active theme's path.
-  $theme_path = \Drupal::theme()->getActiveTheme()->getPath();
+
 
   // Define the default logo path.
-  $default_logo = $theme_path . '/logo.svg'; // Adjust the filename if needed.
+  $default_logo = \Drupal::theme()->getActiveTheme()->getPath() . '/logo.svg';
 
   // Check for a custom logo defined in theme settings.
   $logo_path = theme_get_setting('logo.url') ?: $default_logo;
 
-  // Use the file_url_generator service to generate the logo URL.
-  $file_url_generator = \Drupal::service('file_url_generator');
-  $logo_url = $file_url_generator->generateAbsoluteString($logo_path);
 
   // Add the logo URL to the template variables.
-  $variables['logo'] = $logo_url;
+  $variables['logo'] = \Drupal::service('file_url_generator')->generateAbsoluteString($logo_path);
 
 
 
@@ -142,40 +138,8 @@ function steller_preprocess_page(array &$variables) {
 
 
 
-  // Fetch the last 3 article nodes
-  $nodes = \Drupal::entityTypeManager()->getStorage('node')
-    ->loadByProperties(['type' => 'article', 'status' => 1]);
 
-  // Load nodes using loadMultiple() method after sorting them by creation date
-  $node_ids = array_keys($nodes);
-  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($node_ids);
-
-  // Sort nodes by creation date (descending order)
-  usort($nodes, function ($a, $b) {
-    return strtotime($b->getCreatedTime()) - strtotime($a->getCreatedTime());
-  });
-
-  // Limit to the last 3 articles
-  $last_three_articles = array_slice($nodes, 0, 3);
-
-  // Extract the title and body for each article
-  $articles_data = [];
-  foreach ($last_three_articles as $node) {
-    $author = $node->getOwner();
-    $author_name = $author->getDisplayName();
-
-    $url = $node->toUrl()->toString();
-
-
-    $articles_data[] = [
-      'title'       => $node->getTitle(),
-      'body'        => $node->get('body')->value,
-      'author_name' => $author_name,
-      'url'         => $url,
-    ];
-  }
-
-  // Pass the article data to the page template
+  $articles_data = _get_last_three_articles();
   $variables['last_three_articles'] = $articles_data;
 
 
@@ -186,5 +150,46 @@ function steller_preprocess_page(array &$variables) {
 
 
 }
+
+/**
+ * _get_last_three_articles.
+ * @return array
+ */
+
+function _get_last_three_articles() {
+    $nodes = \Drupal::entityTypeManager()->getStorage('node')
+        ->loadByProperties(['type' => 'article', 'status' => 1]);
+
+    // Load nodes using loadMultiple() method after sorting them by creation date
+    $node_ids = array_keys($nodes);
+    $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($node_ids);
+
+    // Sort nodes by creation date (descending order)
+    usort($nodes, function ($a, $b) {
+        return strtotime($b->getCreatedTime()) - strtotime($a->getCreatedTime());
+    });
+
+    // Limit to the last 3 articles
+    $last_three_articles = array_slice($nodes, 0, 3);
+
+    // Extract the title and body for each article
+    $articles_data = [];
+    foreach ($last_three_articles as $node) {
+        $author = $node->getOwner();
+        $author_name = $author->getDisplayName();
+
+        $url = $node->toUrl()->toString();
+
+
+        $articles_data[] = [
+            'title'       => $node->getTitle(),
+            'body'        => $node->get('body')->value,
+            'author_name' => $author_name,
+            'url'         => $url,
+        ];
+    }
+    return $articles_data;
+}
+
 
 

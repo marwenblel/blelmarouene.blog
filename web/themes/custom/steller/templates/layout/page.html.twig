@@ -353,10 +353,8 @@
                         <h5 class="card-title">{{ article.title }}</h5>
                         <div class="post-details">
                             <a href="javascript:void(0)">Posted By: {{ article.author_name }}</a>
-                            <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                            <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
                         </div>
-                        {{ article.body }}
+                        {{ article.body|striptags }}
                         <a href="{{ article.url }}">Read More..</a>
                     </div>
                 </div>
@@ -452,7 +450,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-sm-6">
-                <p>Copyright <script>document.write(new Date().getFullYear())</script>2025 © <a href="http://www.devcrud.com" target="_blank">DevCRUD</a></p>
+                <p>Copyright <script>document.write(new Date().getFullYear())</script>© <a href="http://www.blelmarouene.blog" target="_blank">BLELMAROUENE.BLOG</a></p>
             </div>
             <div class="col-sm-6">
                 <div class="socials">
