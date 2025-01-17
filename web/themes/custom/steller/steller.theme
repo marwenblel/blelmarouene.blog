@@ -10,6 +10,10 @@ use Drupal\node\Entity\NodeType;
 
 
 use Drupal\Core\Menu\MenuTreeInterface;
+
+
+
+
 /**
  * Implements hook_page_attachments_alter().
  */
@@ -147,6 +151,30 @@ function steller_preprocess_page(array &$variables) {
   $variables['location']             = $config->get('location');
   $variables['phone_number']         = $config->get('phone_number');
   $variables['email']                = $config->get('email');
+
+
+
+  //$variables['projects_count']  = $config->get('fieldset_count');
+
+    //$variables['project_2']  = $config->get('field_img_2');
+    $projects = array();
+    if(($config->get('fieldset_count') AND $config->get('fieldset_count') >= 1)) {
+        for($i = 1; $i <= $config->get('fieldset_count'); $i++) {
+
+            $img_uri = $config->get('field_img_' . $i);
+            // Get the URL using the stream wrapper manager.
+            $img_url = \Drupal::service('file_url_generator')->generateAbsoluteString(\Drupal\file\Entity\File::load($img_uri[0])->getFileUri());
+
+
+            $projects[] = ['id' => $i, 'name' => $config->get('field_name_' . $i), 'img' => $img_url];
+        }
+
+    }
+
+
+    $variables['projects'] = $projects;
+
+
 
 
 }

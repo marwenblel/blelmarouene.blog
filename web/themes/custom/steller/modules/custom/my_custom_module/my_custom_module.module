@@ -1,0 +1,9 @@
+<?php
+
+/**
+* Implements hook_init().
+*/
+function my_custom_module_init() {
+// Display a simple "Hello" message.
+\Drupal::messenger()->addMessage('Hello from my custom module!');
+}

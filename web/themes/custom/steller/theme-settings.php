@@ -150,4 +150,151 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
         '#default_value' => \Drupal::config('steller.settings')->get('email'), 
         '#description'   => t('Enter your email address.'),
     ];
+
+
+
+
+    /*****************************/
+    // Add a wrapper to contain dynamically added fieldsets.
+    $form['dynamic_fieldsets'] = [
+        '#type' => 'container',
+        '#attributes' => ['id' => 'dynamic-fieldsets-wrapper'],
+    ];
+
+    // Get the current number of fieldsets from the form state.
+    //$fieldset_count = $form_state->get('fieldset_count');
+    $fieldset_count = \Drupal::config('steller.settings')->get('fieldset_count');
+
+
+    if ($fieldset_count === NULL) {
+        $fieldset_count = 1; // Default is 1 fieldset.
+        //$form_state->set('fieldset_count', $fieldset_count);
+
+
+        \Drupal::configFactory()->getEditable('steller.settings')
+            ->set('fieldset_count', $fieldset_count)
+            ->save();
+    }
+
+    // Generate the fieldsets dynamically.
+    for ($i = 1; $i <= $fieldset_count; $i++) {
+        $form['dynamic_fieldsets']['fieldset_' . $i] = [
+            '#type' => 'fieldset',
+            '#title' => t('Dynamic Fieldset @num', ['@num' => $i]),
+        ];
+
+        $form['dynamic_fieldsets']['fieldset_' . $i]['field_name_' . $i] = [
+            '#type' => 'textfield',
+            '#title' => t('Field Name @num', ['@num' => $i]),
+            '#default_value' => \Drupal::config('steller.settings')->get('field_name_' . $i),
+        ];
+        $form['dynamic_fieldsets']['fieldset_' . $i]['field_img_' . $i] = [
+            '#type'              => 'managed_file',
+            '#title'             => t('Header image'),
+            '#description'       => t('Upload your header image.'),
+            '#default_value'     => \Drupal::config('steller.settings')->get('field_img_' . $i),
+            '#upload_location'   => 'public://steller/projects/',
+            '#file_extensions'   => 'png',
+            '#required'          => FALSE,
+            '#upload_validators' => [
+                'file_validate_extensions' => ['png'],
+                ]
+            ];
+    }
+
+    // Add a button to create additional fieldsets.
+    $form['add_fieldset'] = [
+        '#type' => 'submit',
+        '#value' => t('Add Another Fieldset'),
+        '#ajax' => [
+            'callback' => 'steller_add_fieldset_ajax_callback',
+            'wrapper' => 'dynamic-fieldsets-wrapper',
+        ],
+        '#submit' => ['steller_add_fieldset_submit'],
+    ];
+
+
+    // Remove a button to create additional fieldsets.
+    $form['remove_fieldset'] = [
+        '#type' => 'submit',
+        '#value' => t('Remove Another Fieldset'),
+        '#ajax' => [
+            'callback' => 'steller_remove_fieldset_ajax_callback',
+            'wrapper' => 'dynamic-fieldsets-wrapper',
+        ],
+        '#submit' => ['steller_remove_fieldset_submit'],
+    ];
+
+    // Save all settings.
+    $form['#submit'][] = 'steller_theme_settings_submit';
+
+
+
+    /*****************************/
+
+
+
+
+}
+
+/**
+ * AJAX callback for adding a new fieldset.
+ */
+function steller_add_fieldset_ajax_callback(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    return $form['dynamic_fieldsets'];
+}
+
+/**
+ * AJAX callback for adding a new fieldset.
+ */
+function steller_remove_fieldset_ajax_callback(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    return $form['dynamic_fieldsets'];
+}
+
+function steller_add_fieldset_submit(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    // Increment the fieldset count.
+    //$fieldset_count = $form_state->get('fieldset_count');
+    $fieldset_count = \Drupal::config('steller.settings')->get('fieldset_count');
+    //$form_state->set('fieldset_count', $fieldset_count + 1);
+    \Drupal::configFactory()->getEditable('steller.settings')
+        ->set('fieldset_count', $fieldset_count + 1)
+        ->save();
+
+    // Trigger a rebuild.
+    $form_state->setRebuild(TRUE);
+}
+function steller_remove_fieldset_submit(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    // Increment the fieldset count.
+    //$fieldset_count = $form_state->get('fieldset_count');
+    $fieldset_count = \Drupal::config('steller.settings')->get('fieldset_count');
+
+
+    if($fieldset_count >=  1) {
+        \Drupal::configFactory()->getEditable('steller.settings')
+            ->set('fieldset_count', $fieldset_count - 1)
+            ->save();
+    }
+
+    // Trigger a rebuild.
+    $form_state->setRebuild(TRUE);
+}
+
+/**
+ * Submit callback for the theme settings form.
+ */
+function steller_theme_settings_submit(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    //$fieldset_count = $form_state->get('fieldset_count');
+    $fieldset_count = \Drupal::config('steller.settings')->get('fieldset_count');
+    for ($i = 1; $i <= $fieldset_count; $i++) {
+        $field_name = 'field_name_' . $i;
+        $field_img  = 'field_img_' . $i;
+        \Drupal::configFactory()->getEditable('steller.settings')
+            ->set($field_name, $form_state->getValue($field_name))
+            ->save();
+        \Drupal::configFactory()->getEditable('steller.settings')
+            ->set($field_img, $form_state->getValue($field_img))
+            ->save();
+    }
+    // Trigger a rebuild.
+    $form_state->setRebuild(TRUE);
 }

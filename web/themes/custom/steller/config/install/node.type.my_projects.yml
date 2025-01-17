@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: my_projects
+type: my_projects
+name: 'My Projects'
+description: 'A content type for projects.'
+help: ''
+new_revision: false
+display_submitted: true
+preview_mode: 1
