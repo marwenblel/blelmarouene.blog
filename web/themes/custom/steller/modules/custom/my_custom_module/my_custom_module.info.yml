@@ -1,5 +1,0 @@
-name: 'My Custom Module'
-type: module
-description: 'A custom module inside the steller theme.'
-core_version_requirement: ^10
-package: Custom
