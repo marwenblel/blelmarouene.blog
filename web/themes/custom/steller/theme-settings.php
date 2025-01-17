@@ -194,10 +194,10 @@ function steller_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
             '#description'       => t('Upload your header image.'),
             '#default_value'     => \Drupal::config('steller.settings')->get('field_img_' . $i),
             '#upload_location'   => 'public://steller/projects/',
-            '#file_extensions'   => 'png',
+            '#file_extensions'   => 'jpg',
             '#required'          => FALSE,
             '#upload_validators' => [
-                'file_validate_extensions' => ['png'],
+                'file_validate_extensions' => ['jpg'],
                 ]
             ];
     }
